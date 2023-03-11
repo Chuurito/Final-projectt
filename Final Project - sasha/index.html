@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions</title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css"/>
+</head>
+<body>
+    <div id="box" class="full">
+        <div class="fuller">
+            <h2 class="one">Welcome User, your total transactions is:</h2>
+                <div class="container1">
+                    <p class="balancee">AED <span id="balance">0</span></p>
+                </div>
+                <div class="container2">
+                    <p class="depositt">(+)Credit: AED <span id="deposit">0</span></p>
+                </div>
+                <div class="container3">
+                    <p class="withdraww">(-)Debit: AED <span id="withdraw">0</span></p>
+                </div>
+        </div>
+        <div id="input-section" class="input">
+            <div class="depositIn">
+                <h3>Deposit</h3>
+                <input type="date" class="form-control" id="date1" placeholder="Date">
+                <input type="text" class="form-control" id="user1" placeholder="User's Name">
+                <input type="text" class="form-control" id="from-input1" placeholder="From where">
+                <input type="number" class="form-control" id="deposit-input" placeholder="Deposit Amount">
+                <br>
+                <button class="btn-for-deposit" id="deposit-btn">Deposit</button>
+            </div>
+            <div class="withdrawIn">
+                <h3>Withdraw</h3>
+                <input type="date" class="form-control" id="date2" placeholder="Date">
+                <input type="text" class="form-control" id="user2" placeholder="User's Name">
+                <input type="text" class="form-control" id="from-input2" placeholder="From where">
+                <input type="number" class="form-control" id="withdraw-input" placeholder="Withdraw Amount">
+                <br>
+                <button class="btn-for-withdraw" id="withdraw-btn">Withdraw</button>
+            </div>
+        </div>
+
+        <div id="contain">
+            <h2 class="title">Transaction Details:</h2>
+        </div>
+    
+        <table id="display">
+            <tr>
+                <th>Date</th>
+                <th>User Name</th>
+                <th>From</th>
+                <th>Amount</th>
+            </tr>
+        </table>
+    </div>
+
+    <script src="javascr.js"></script>
+</body>
+</html>
+  

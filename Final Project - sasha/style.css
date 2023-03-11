@@ -1,0 +1,278 @@
+body {
+    font-family: arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    height: max-content;
+}
+
+#box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.balancee {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 45%;
+    margin-top: -10px;
+}
+
+.depositt {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 37%;
+    margin-top: -25px;
+    padding: 5px 5px 15px 5px;
+}
+
+.deposit {
+    font-size: 20px;
+    font-weight: 12px;
+}
+
+.withdraww {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 39%;
+    margin-top: -20px;
+    padding: 20px, 5px, 5px, 5px;
+}
+
+.withdraw {
+    font-size: 20px;
+    font-weight: 12px;
+}
+
+
+
+.input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .depositIn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 20px;
+  }
+
+  .withdrawIn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 350px;
+  }
+  
+  .input > div > h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .input > div > input {
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid black;
+  }
+  
+  .input > div > button {
+    padding: 5px 10px;
+    background-color: #02248b;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .input > div > button:hover {
+    background-color: #001a66;
+  }
+
+.title {
+    margin-left: -385px;
+    margin-top: 50px;
+    padding: 5px, 0 5px, 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px auto;
+    background-color: #001a66;
+    color: white;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+table, th, td {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+th {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: arial;
+    color: white;
+}
+ td {
+    font-size: 25px;
+    color: whitesmoke;
+    font-weight: 400;
+    font-family: arial;
+ }
+
+ @media only screen and (min-width: 415px) and (max-width: 1024px) {
+
+  #box {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .one {
+        text-align: center;
+    }
+  
+    .balancee {
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .depositt {
+      margin-left: 0;
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    .withdraww {
+      margin-left: 0;
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    .depositIn {
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 20px;
+    }
+  
+    .withdrawIn {
+      margin-left: 0;
+      margin-right: -20px;
+      margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 414px) {
+
+  #box {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .one {
+      text-align: center;
+  }
+
+  .balancee {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .depositt {
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .withdraww {
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .depositIn {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+    height: 200px;
+    width: 450px;
+    align-items: center;
+    padding: 5px 5px 5px 5px;
+    margin: 0 10px 0 15px;
+  }
+
+  .depositIn .form-control {
+    height: 50px;
+    width: 80px;
+    text-align: center;
+  }
+
+  .depositIn .btn-for-deposit {
+    margin: -20px 0 0 0;
+  }
+
+  .withdrawIn {
+    margin-left: 0;
+    margin-right: 0px;
+    margin-top: 20px;
+    height: 200px;
+    width: 450px;
+    align-items: center;
+    padding: 5px 5px 5px 5px;
+    margin: 0 15px 0 0;
+  }
+
+  h3 {
+    font-size: 1.10em;
+    margin-top: 2px;
+  }
+
+  .withdrawIn .form-control {
+    height: 50px;
+    width: 80px;
+  }
+
+  .withdrawIn .btn-for-withdraw {
+    margin: -20px 0 0 0;
+  }
+
+  table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 100px;
+    max-width: 700px;
+ }
+
+  th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+  }
+
+  tr:hover {
+      background-color: #f5f5f5;
+  }
+
+  th {
+      background-color: #02248b;
+      color: white;
+  }
+}
+  
